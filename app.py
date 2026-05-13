@@ -27,7 +27,7 @@ def get_asteroid_data():
     """取得今日近地小行星數據 (使用 NASA Demo Key)"""
     today = datetime.now().strftime('%Y-%m-%d')
     # 建議之後去 api.nasa.gov 申請自己的 Key 替換 DEMO_KEY
-    url = f"https://api.nasa.gov/neo/rest/v1/feed?start_date={today}&end_date={today}&api_key=DEMO_KEY"
+    url = f"https://api.nasa.gov/neo/rest/v1/feed?start_date={today}&end_date={today}&api_key=KETgR5I9vpaBcqRpTuk7DqFsPbKGJgMOUJs53J4r"
     try:
         response = requests.get(url)
         data = response.json()
